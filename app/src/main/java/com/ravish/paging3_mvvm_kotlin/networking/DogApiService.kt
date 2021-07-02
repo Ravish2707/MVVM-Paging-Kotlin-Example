@@ -4,7 +4,7 @@ import com.ravish.paging3_mvvm_kotlin.model.Dogs
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface DogApiInterface {
+interface DogApiService {
 
     @GET("images/search")
     suspend fun getAllDogs(@Query("page") page:Int, @Query("limit") limit:Int) : List<Dogs>
